@@ -144,14 +144,14 @@
       "hash": "3507d0accd82db4e50f1af1f3f735193174d3282"
     },
     "com.unity.netcode.gameobjects": {
-      "version": "https://github.com/Unity-Technologies/com.unity.netcode.gameobjects.git?path=/com.unity.netcode.gameobjects#90cf5631c95b3ef5c82185856c9b8cbada72d688",
+      "version": "https://github.com/Unity-Technologies/com.unity.netcode.gameobjects.git?path=/com.unity.netcode.gameobjects#e146ac0624a6deeb194116b166155f72739b4c79",
       "depth": 0,
       "source": "git",
       "dependencies": {
         "com.unity.nuget.mono-cecil": "1.10.1",
         "com.unity.transport": "1.3.1"
       },
-      "hash": "90cf5631c95b3ef5c82185856c9b8cbada72d688"
+      "hash": "e146ac0624a6deeb194116b166155f72739b4c79"
     },
     "com.unity.nuget.mono-cecil": {
       "version": "1.11.4",

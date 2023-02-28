@@ -52,19 +52,15 @@ namespace Unity.BossRoom.Utils
             {
                 case (int)ConnectionType.UDP:
                     connectionType = "udp";
-                    Debug.Log("UDP");
                     break;
                 case (int)ConnectionType.DTLS:
                     connectionType = "dtls";
-                    Debug.Log("DTLS");
                     break;
                 case (int)ConnectionType.WS:
                     connectionType = "ws";
-                    Debug.Log("WS");
                     break;
                 case (int)ConnectionType.WSS:
                     connectionType = "wss";
-                    Debug.Log("WSS");
                     break;
             }
         }

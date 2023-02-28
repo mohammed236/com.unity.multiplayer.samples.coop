@@ -78,14 +78,43 @@ namespace Unity.BossRoom.ConnectionManagement
         {
             SetConnectionPayload(GetPlayerId(), m_PlayerName);
             var utp = (UnityTransport)m_ConnectionManager.NetworkManager.NetworkConfig.NetworkTransport;
+            SetConnectionType(utp);
             utp.SetConnectionData(m_Ipaddress, m_Port);
+            Debug.Log("[Use Encryption]: " + utp.UseEncryption);
+            Debug.Log("[Use WebSockets]: " + utp.UseWebSockets);
         }
 
         public override async Task SetupHostConnectionAsync()
         {
             SetConnectionPayload(GetPlayerId(), m_PlayerName); // Need to set connection payload for host as well, as host is a client too
             var utp = (UnityTransport)m_ConnectionManager.NetworkManager.NetworkConfig.NetworkTransport;
+            SetConnectionType(utp);
             utp.SetConnectionData(m_Ipaddress, m_Port);
+            Debug.Log("[Use Encryption]: " + utp.UseEncryption);
+            Debug.Log("[Use WebSockets]: " + utp.UseWebSockets);
+        }
+
+        void SetConnectionType(UnityTransport utp)
+        {
+            switch (ConnectionTypeDropdown.connectionType)
+            {
+                case "udp":
+                    utp.UseEncryption = false;
+                    utp.UseWebSockets = false;
+                    break;
+                case "dtls":
+                    utp.UseEncryption = true;
+                    utp.UseWebSockets = false;
+                    break;
+                case "ws":
+                    utp.UseEncryption = false;
+                    utp.UseWebSockets = true;
+                    break;
+                case "wss":
+                    utp.UseEncryption = true;
+                    utp.UseWebSockets = true;
+                    break;
+            }
         }
     }
 

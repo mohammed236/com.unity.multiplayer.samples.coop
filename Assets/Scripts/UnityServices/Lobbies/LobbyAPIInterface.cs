@@ -42,7 +42,7 @@ namespace Unity.BossRoom.UnityServices.Lobbies
             CreateLobbyOptions createOptions = new CreateLobbyOptions
             {
                 IsPrivate = isPrivate,
-                IsLocked = true, // we lock lobby when creating them and only unlock them when the Relays server is ready so that players can only see and join the lobby when it is ready.
+                IsLocked = true, // we lock the lobby when creating it and only unlock it when the Relay server is allocated so that players can only see and join the lobby when it is ready.
                 Player = new Player(id: requesterUasId, data: hostUserData),
                 Data = lobbyData
             };

@@ -67,45 +67,49 @@ namespace Unity.BossRoom.ConnectionManagement
         ushort m_Port;
 
         private string CaCertificate =
-            @"-----BEGIN CERTIFICATE-----
-MIIDDzCCAfcCFBU2SZ+6r8bdx36uGkHroQpEmX+lMA0GCSqGSIb3DQEBCwUAMEQx
-CzAJBgNVBAYTAkNBMQ8wDQYDVQQIDAZRdWViZWMxETAPBgNVBAcMCE1vbnRyZWFs
-MREwDwYDVQQKDAhVbml0eSBDQTAeFw0yMjAzMTcwMzQyNDFaFw0zMjAzMTQwMzQy
-NDFaMEQxCzAJBgNVBAYTAkNBMQ8wDQYDVQQIDAZRdWViZWMxETAPBgNVBAcMCE1v
-bnRyZWFsMREwDwYDVQQKDAhVbml0eSBDQTCCASIwDQYJKoZIhvcNAQEBBQADggEP
-ADCCAQoCggEBALv/mWjDrxtKTqKRrNBqZ9an0m60tSSNaXX9BRSOyGuqFmdEdW5v
-YnQDXsn9wGKFF6mgr2ATfgL273Im95aLRvHwhNmEP2c2T6WUq//Pq32nJ8kwiKly
-2ctBdp6QyxgRuKMvFhTFAjzEdwH6GNWdmDjq3BgErKH8JhBnAzV5DAdbnr0pC4es
-0ZAOVw8iyxKWW9U6/pb/Jed6R/ioV6OuGQbaAfGhFO2/lt3RYI4MkUr9pTWIqJwc
-aDL9WxCoTggVNkckQmlMiLe0rYcCqEc+A0MdWblVNKds6HcBxyjMgxsELA4DmQ7C
-4frNN8EtokxbaqjbM/cJNYfQ9IoBsATKaHkCAwEAATANBgkqhkiG9w0BAQsFAAOC
-AQEAB7FwMBsB+pU6VBBGJPrHm70RitGffyDTefDtSOyrNXxdHyoMiSFhb26w/iin
-/jubAZ5I3lvNFawRrDlzlJSxJDjaiHDd29W5UcV+6ij3Te/NJhck+9tXfuy6r95+
-jjgGpm1RvBQq5XhEJh5FMfzXUYZ6NFg+6fLfqbE/hHo2mq+S0AAwR6gwDpr/6UzU
-bARuY+bmrEFjEVFXNkmv4iZDkMQTi8UbmiwsNX3zJBPmSCErKiIPLHXBpzJitmcG
-VYgO3hp/EObkBLHheqUuqLIY6XDvDhVPiJq4VyNGHnhR6GSiXs4ixL6v+UWrCHbh
-ud3r5a40pzFbEWb6Zzrb3+BQZQ==
+@"-----BEGIN CERTIFICATE-----
+MIIDpzCCAo+gAwIBAgIUeyWOu7GQSV0N3dZNwRr2Pl8HXPAwDQYJKoZIhvcNAQEL
+BQAwYjELMAkGA1UEBhMCQ0ExDzANBgNVBAgMBlF1ZWJlYzERMA8GA1UEBwwITW9u
+dHJlYWwxGzAZBgNVBAoMElVuaXR5IFRlY2hub2xvZ2llczESMBAGA1UEAwwJMTI3
+LjAuMC4xMCAXDTIzMDMxNzE4MDk0MloYDzMwMjIwNzE4MTgwOTQyWjBiMQswCQYD
+VQQGEwJDQTEPMA0GA1UECAwGUXVlYmVjMREwDwYDVQQHDAhNb250cmVhbDEbMBkG
+A1UECgwSVW5pdHkgVGVjaG5vbG9naWVzMRIwEAYDVQQDDAkxMjcuMC4wLjEwggEi
+MA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQD8ikJud244RTt3tCoBluJxocUw
+QboPkWU6FHGPiqztACk5ergbd3zvd2//daM7HVGy857vDoZZ9PvPSP29AvD3eO8v
+KFoBWfeTzGjXw0L5YXQ3wxq1fhJ1BOI0XLRVPndhLrBLsETz0XUctZASC/EfPiQD
+m5gINh7HcQkwza7z7XfX9+A5ttzFHFntoLOFCL67H6iAEGntj4LX/zlZSnE+1F2L
+wTYrQAja4XXvJH2GLCYhBiqYbYuaigKfOQvDXCQWCNeyfD/Xh2ugzBXkMOl+ngV6
+Ei7qj2sNWWZh49fmTz9DDjh9Jf3gISpcOjabIpE7ZWYuDwhV8YhssK5fnfrdAgMB
+AAGjUzBRMB0GA1UdDgQWBBS1loTCqrnX8gnj/TPUzEwIq8lgWzAfBgNVHSMEGDAW
+gBS1loTCqrnX8gnj/TPUzEwIq8lgWzAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3
+DQEBCwUAA4IBAQCi+A4Fm4HTbL3rjtDM0mXeqjD+XpnxzmsYmSqUXLaDw4OkTQZG
+QcBwWaP8GhbhcCgNdd5wNsF8zi8B8KN2ApuefOy9VJCVzq+ZNVde8ib1BtRRogng
+U81Kv5Cah2la16wj7Vq1B4SAbKA7mBtagyF4kOU52W93RmYrXZw1LETK5fDCXmUA
+/ddDuls7dwbsdoZSGv1UouMe/u/JU5v5M2L9naXj3ajdrPe4MNDSeYc+kMp4qSmd
+02falAMqS4vEdqcems1cLzLNjOnbdz0kjRlC1THNsKbyAC7s3icPC7Sp6eByHI0e
+M4VrSMAGTfD7PRdBxHYRKRCvstrx1SINX10u
 -----END CERTIFICATE-----";
 
         private string Certificate1 =
 @"-----BEGIN CERTIFICATE-----
-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
+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
-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
+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
 -----END CERTIFICATE-----";
 
         // this will be required for DTLS and WSS, removed for security purpose, saved locally
@@ -226,6 +230,12 @@ IqjWfKWDGIrxnIiCnGBZ8DF/1mVndGsb+ufVdUB1A59CFJxgTXbBaSI7Vw==
             // Configure UTP with allocation
             var utp = (UnityTransport)m_ConnectionManager.NetworkManager.NetworkConfig.NetworkTransport;
             Debug.Log("Connection Type: " + ConnectionTypeDropdown.connectionType);
+
+            if (ConnectionTypeDropdown.connectionType == "wss")
+            {
+                utp.UseWebSockets = true;
+            }
+            
             utp.SetRelayServerData(new RelayServerData(joinedAllocation, ConnectionTypeDropdown.connectionType));
         }
 
@@ -251,6 +261,12 @@ IqjWfKWDGIrxnIiCnGBZ8DF/1mVndGsb+ufVdUB1A59CFJxgTXbBaSI7Vw==
             // Setup UTP with relay connection info
             var utp = (UnityTransport)m_ConnectionManager.NetworkManager.NetworkConfig.NetworkTransport;
             Debug.Log("Connection Type: " + ConnectionTypeDropdown.connectionType);
+            
+            if (ConnectionTypeDropdown.connectionType == "wss")
+            {
+                utp.UseWebSockets = true;
+            }
+
             utp.SetRelayServerData(new RelayServerData(hostAllocation, ConnectionTypeDropdown.connectionType)); // This is with DTLS enabled for a secure connection
         }
     }

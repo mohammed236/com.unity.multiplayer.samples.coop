@@ -11,7 +11,7 @@
     "com.unity.memoryprofiler": "1.0.0",
     "com.unity.multiplayer.tools": "https://github.com/Unity-Technologies/com.unity.multiplayer.tools.git#3507d0accd82db4e50f1af1f3f735193174d3282",
     "com.unity.netcode.gameobjects": "https://github.com/Unity-Technologies/com.unity.netcode.gameobjects.git?path=/com.unity.netcode.gameobjects#e6c4786011cc17fda987949f8fe951256c59b676",
-    "com.unity.transport": "https://github.cds.internal.unity3d.com/unity/com.unity.transport.git?path=/com.unity.transport#9466e5ce5be3bce43c0968e901a1610a2d382f49",
+    "com.unity.transport": "https://github.cds.internal.unity3d.com/unity/com.unity.transport.git?path=/com.unity.transport#f7c618013b165797b9f23a38cd9dd1c219422030",
     "com.unity.performance.profile-analyzer": "1.1.1",
     "com.unity.postprocessing": "3.2.2",
     "com.unity.render-pipelines.universal": "14.0.5",

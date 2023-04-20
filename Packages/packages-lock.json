@@ -16,7 +16,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.burst": {
-      "version": "1.8.3",
+      "version": "1.8.4",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -43,14 +43,15 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.collections": {
-      "version": "2.1.0-pre.6",
+      "version": "2.1.1",
       "depth": 1,
       "source": "registry",
       "dependencies": {
-        "com.unity.burst": "1.7.4",
+        "com.unity.burst": "1.8.4",
         "com.unity.modules.unityanalytics": "1.0.0",
         "com.unity.nuget.mono-cecil": "1.11.4",
-        "com.unity.test-framework": "1.1.33"
+        "com.unity.test-framework": "1.3.3",
+        "com.unity.test-framework.performance": "3.0.0-pre.1"
       },
       "url": "https://packages.unity.com"
     },
@@ -62,8 +63,8 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ext.nunit": {
-      "version": "1.0.6",
-      "depth": 1,
+      "version": "2.0.3",
+      "depth": 3,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
@@ -322,12 +323,22 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.test-framework": {
-      "version": "1.1.33",
-      "depth": 0,
+      "version": "1.3.3",
+      "depth": 2,
       "source": "registry",
       "dependencies": {
-        "com.unity.ext.nunit": "1.0.6",
+        "com.unity.ext.nunit": "2.0.3",
         "com.unity.modules.imgui": "1.0.0",
+        "com.unity.modules.jsonserialize": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.test-framework.performance": {
+      "version": "3.0.0-pre.1",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.test-framework": "1.1.31",
         "com.unity.modules.jsonserialize": "1.0.0"
       },
       "url": "https://packages.unity.com"
@@ -364,15 +375,15 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.transport": {
-      "version": "https://github.cds.internal.unity3d.com/unity/com.unity.transport.git?path=/com.unity.transport#9466e5ce5be3bce43c0968e901a1610a2d382f49",
+      "version": "https://github.cds.internal.unity3d.com/unity/com.unity.transport.git?path=/com.unity.transport#f7c618013b165797b9f23a38cd9dd1c219422030",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "com.unity.collections": "2.1.0-pre.6",
-        "com.unity.burst": "1.8.3",
+        "com.unity.collections": "2.1.1",
+        "com.unity.burst": "1.8.4",
         "com.unity.mathematics": "1.2.6"
       },
-      "hash": "9466e5ce5be3bce43c0968e901a1610a2d382f49"
+      "hash": "f7c618013b165797b9f23a38cd9dd1c219422030"
     },
     "com.unity.ugui": {
       "version": "1.0.0",

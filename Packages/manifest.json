@@ -22,7 +22,7 @@
     "com.unity.textmeshpro": "3.0.6",
     "com.unity.timeline": "1.7.4",
     "com.unity.toolchain.macos-x86_64-linux-x86_64": "2.0.4",
-    "com.unity.transport": "https://github.cds.internal.unity3d.com/unity/com.unity.transport.git?path=/com.unity.transport#f7c618013b165797b9f23a38cd9dd1c219422030",
+    "com.unity.transport": "https://github.cds.internal.unity3d.com/unity/com.unity.transport.git?path=/com.unity.transport#8debfdc6a89a3d715a75ab808dfb0ceaed714ad7",
     "com.unity.ugui": "1.0.0",
     "com.veriorpies.parrelsync": "https://github.com/VeriorPies/ParrelSync.git?path=/ParrelSync#bb3d5067e49e403d8b8ba15c036d313b4dd2c696",
     "jp.hadashikick.vcontainer": "1.11.0",

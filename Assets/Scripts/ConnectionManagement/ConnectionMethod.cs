@@ -235,7 +235,7 @@ k9A+Xa+xtHFMpPprTokPPfkeizt52plBjP9X09a9KSq8PLMtaLsQGmcAXV6hmG71
             {
                 utp.UseWebSockets = true;
             }
-            
+
             utp.SetRelayServerData(new RelayServerData(joinedAllocation, ConnectionTypeDropdown.connectionType));
         }
 
@@ -261,7 +261,7 @@ k9A+Xa+xtHFMpPprTokPPfkeizt52plBjP9X09a9KSq8PLMtaLsQGmcAXV6hmG71
             // Setup UTP with relay connection info
             var utp = (UnityTransport)m_ConnectionManager.NetworkManager.NetworkConfig.NetworkTransport;
             Debug.Log("Connection Type: " + ConnectionTypeDropdown.connectionType);
-            
+
             if (ConnectionTypeDropdown.connectionType == "wss")
             {
                 utp.UseWebSockets = true;

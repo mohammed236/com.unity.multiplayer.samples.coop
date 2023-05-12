@@ -11,6 +11,7 @@
     "com.unity.memoryprofiler": "1.0.0",
     "com.unity.multiplayer.tools": "2.0.0-pre.2",
     "com.unity.netcode.gameobjects": "1.4.0",
+    "com.unity.transport": "https://github.cds.internal.unity3d.com/unity/com.unity.transport.git?path=/com.unity.transport#8debfdc6a89a3d715a75ab808dfb0ceaed714ad7",
     "com.unity.performance.profile-analyzer": "1.2.2",
     "com.unity.postprocessing": "3.2.2",
     "com.unity.render-pipelines.universal": "14.0.6",

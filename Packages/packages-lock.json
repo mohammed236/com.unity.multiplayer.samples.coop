@@ -16,7 +16,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.burst": {
-      "version": "1.8.3",
+      "version": "1.8.4",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -41,12 +41,13 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.collections": {
-      "version": "1.2.4",
+      "version": "2.1.4",
       "depth": 1,
       "source": "registry",
       "dependencies": {
-        "com.unity.burst": "1.6.6",
-        "com.unity.test-framework": "1.1.31"
+        "com.unity.burst": "1.8.4",
+        "com.unity.modules.unityanalytics": "1.0.0",
+        "com.unity.nuget.mono-cecil": "1.11.4"
       },
       "url": "https://packages.unity.com"
     },
@@ -374,15 +375,15 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.transport": {
-      "version": "1.3.3",
-      "depth": 1,
-      "source": "registry",
+      "version": "https://github.cds.internal.unity3d.com/unity/com.unity.transport.git?path=/com.unity.transport#8debfdc6a89a3d715a75ab808dfb0ceaed714ad7",
+      "depth": 0,
+      "source": "git",
       "dependencies": {
-        "com.unity.collections": "1.2.4",
-        "com.unity.burst": "1.6.6",
+        "com.unity.collections": "2.1.4",
+        "com.unity.burst": "1.8.4",
         "com.unity.mathematics": "1.2.6"
       },
-      "url": "https://packages.unity.com"
+      "hash": "8debfdc6a89a3d715a75ab808dfb0ceaed714ad7"
     },
     "com.unity.ugui": {
       "version": "1.0.0",
